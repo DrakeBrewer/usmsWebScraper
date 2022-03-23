@@ -34,7 +34,7 @@ for i in range(1, n, 2):
         lastNameArg = sys.argv[i+1].strip()
         yearArg = str(date.today().year)
     except IndexError:
-        print("Oops! You have a misinput! check your inputs and try again.")
+        print("Oops, You have a misinput! check your inputs and try again.")
 
 # JSON url boilerplate
     url = "https://www.usms.org/reg/members/jqs/searchmembers.php?RegYear={year}&FirstName={firstName}&LastName={lastName}&oper=grid&_search=false&nd=1643355539541&rows=200&page=1&sidx=BinaryLastName%20asc%2C%20FirstName%20asc%2C%20RegDate&sord=asc&totalrows=-1".format(year = yearArg, firstName = firstNameArg, lastName = lastNameArg)
